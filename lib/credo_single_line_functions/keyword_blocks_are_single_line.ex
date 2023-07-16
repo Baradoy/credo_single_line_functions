@@ -1,4 +1,8 @@
 defmodule CredoSingleLineFunctions.KeywordBlocksAreSingleLine do
+  @moduledoc """
+  A Credo rule to report when `do:` syntax is used over multiple lines.
+  """
+
   use Credo.Check,
     base_priority: :high,
     category: :readability,
