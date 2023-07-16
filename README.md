@@ -9,9 +9,9 @@ use do-blocks for functions spanning multiple lines. If you prefer to be consist
 you can use do-blocks throughout your codebase.
 ```
 
-Examples:
+# Examples:
 
-# preferred
+## preferred
 
 ```elixir
   def foo, do: 1 |> Integer.to_string() |> String.to_integer()
@@ -19,7 +19,7 @@ Examples:
     do: 1 |> Integer.to_string() |> String.to_integer()
 ```
 
-# NOT preferred
+## NOT preferred
 
 ```elixir
   def foo,
