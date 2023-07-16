@@ -9,6 +9,29 @@ use do-blocks for functions spanning multiple lines. If you prefer to be consist
 you can use do-blocks throughout your codebase.
 ```
 
+# Usage
+
+Add the dependency to `mix.exs`:
+
+```elixir
+defp deps do
+    [
+      ...
+      {:credo_single_line_functions, github: "Baradoy/credo_single_line_functions", tag: "v0.1.0", only: [:dev, :test], runtime: false},
+      ...
+    ]
+end
+```
+
+Add the check to `.credo.exs`:
+```elixir
+checks: [
+  ...
+  {CredoSingleLineFunctions.KeywordBlocksAreSingleLine, []},
+  ...
+}
+```
+
 # Examples:
 
 ## preferred
